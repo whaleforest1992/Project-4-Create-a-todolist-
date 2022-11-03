@@ -28,4 +28,29 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Firefox */
+}
+form input,
+form button {
+  border: none;
+  padding: 0.25rem 0.25rem;
+  font-size: 1.5rem;
+  margin: 0.25rem;
+}
+form input[type=number] {
+  width: 50px;
+  text-align: center;
+}
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form input[type=number] {
+  -moz-appearance: textfield;
+}
+form button {
+  cursor: pointer;
+  color: white;
+  background-color: #166a9e;
 }/*# sourceMappingURL=style.css.map */

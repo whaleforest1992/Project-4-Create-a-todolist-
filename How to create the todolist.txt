@@ -25,18 +25,19 @@ input number寬度
 移除數字旁的上下箭頭直接上網找"input number arrows remove"並複製內容貼上即可
 button顏色(字)
 
-11/13
+11/3
 javascript
 我希望當按下輸入button後會發生什麼事
 所以要先找到這個button
 {當一個網頁被載入到瀏覽器時，瀏覽器會先分析這個 HTML 檔案，然後會依照這份 HTML 的內容解析成「DOM」}
 然後為她加上一個事件，這個事件裡發生的事就是整個核心目標
 *先讓資料不要送出
-獲得input中的資料，如果text中沒有資料要請他補上
-將獲得的資料建立list，出現在section中
+再來我需要前面獲得input中的資料，(let fotm =、善用parentelement、children)
+還有如果text中沒有資料要請他補上(if)
+將獲得的資料建立list(createElement)，
+出現在section中，所以上面要補上"找到section"
 
-10/19 js
-讓todoText不能是空白的
-cteate a todo  要在按按鈕後在下面出現新的代辦清單
+
+11/4 js
 我要在list旁新增icon(chick、trash)
 所以html要link連結https://cdnjs.com/libraries/font-awesome
