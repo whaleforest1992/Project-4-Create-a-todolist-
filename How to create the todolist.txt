@@ -1,0 +1,42 @@
+﻿首先要創造Html、css、Js
+index.html  style(style.scss、style.css)  add.js
+
+先做index.html 基礎模板!，改中文，改title
+要有標題header(H1)
+可輸入的欄位input(項目、月、日)，發送button
+可以將日期重新排列的button
+用來存放new list的地方(section)
+在最底部要連結add.js(script)
+在head要link css
+
+scss
+*{margin:0;padding:0;} 萬用字元：用來匹配頁面上所有元素，刪除默認值。
+box-sizing: border-box;
+pointer-events:none;
+我想要先改背景顏色，讓他從下而上漸層暖色系
+[問題：顏色沒有滿版，變成一節一節的]
+[是不是應該先把標籤放定位？][找了之前的做，有一樣的問題]
+
+改變標題大小位置顏色
+11/2
+1.對input作設定
+input,button 去除邊框、大小、間距
+input number寬度
+移除數字旁的上下箭頭直接上網找"input number arrows remove"並複製內容貼上即可
+button顏色(字)
+
+11/13
+javascript
+我希望當按下輸入button後會發生什麼事
+所以要先找到這個button
+{當一個網頁被載入到瀏覽器時，瀏覽器會先分析這個 HTML 檔案，然後會依照這份 HTML 的內容解析成「DOM」}
+然後為她加上一個事件，這個事件裡發生的事就是整個核心目標
+*先讓資料不要送出
+獲得input中的資料，如果text中沒有資料要請他補上
+將獲得的資料建立list，出現在section中
+
+10/19 js
+讓todoText不能是空白的
+cteate a todo  要在按按鈕後在下面出現新的代辦清單
+我要在list旁新增icon(chick、trash)
+所以html要link連結https://cdnjs.com/libraries/font-awesome
